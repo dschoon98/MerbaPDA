@@ -3902,6 +3902,54 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-dev-client@npm:~55.0.24":
+  version: 55.0.24
+  resolution: "expo-dev-client@npm:55.0.24"
+  dependencies:
+    expo-dev-launcher: "npm:55.0.25"
+    expo-dev-menu: "npm:55.0.21"
+    expo-dev-menu-interface: "npm:55.0.2"
+    expo-manifests: "npm:~55.0.15"
+    expo-updates-interface: "npm:~55.1.5"
+  peerDependencies:
+    expo: "*"
+  checksum: 10c0/4b96c8ac8c0691dbde588f198c343def75799cd0aca84731999551543a3110d2940c9e341e171a949aca8d12505881ed2a02e3bab75e6f042bd9f62abbc1c94e
+  languageName: node
+  linkType: hard
+
+"expo-dev-launcher@npm:55.0.25":
+  version: 55.0.25
+  resolution: "expo-dev-launcher@npm:55.0.25"
+  dependencies:
+    "@expo/schema-utils": "npm:^55.0.3"
+    expo-dev-menu: "npm:55.0.21"
+    expo-manifests: "npm:~55.0.15"
+  peerDependencies:
+    expo: "*"
+  checksum: 10c0/c79cee6e226ffd4d9d776ebf13329e4fdf15eca1e44e74ddb32a3c6a6331458b7e19ef9b1e10eb510a41c9f4dc2bfdbadf34cdeb74386262b41649a1667ddd70
+  languageName: node
+  linkType: hard
+
+"expo-dev-menu-interface@npm:55.0.2":
+  version: 55.0.2
+  resolution: "expo-dev-menu-interface@npm:55.0.2"
+  peerDependencies:
+    expo: "*"
+  checksum: 10c0/e13f4f235df2d3d9e35026553a3b49350ea08a7a1285634f15f8e957a39e3cf522f1f6a81a89396c66bfec452e664094e1711cf516db077da2d12ae844e3cabe
+  languageName: node
+  linkType: hard
+
+"expo-dev-menu@npm:55.0.21":
+  version: 55.0.21
+  resolution: "expo-dev-menu@npm:55.0.21"
+  dependencies:
+    expo-dev-menu-interface: "npm:55.0.2"
+  peerDependencies:
+    expo: "*"
+  checksum: 10c0/18adc8b98d8fa8df7e130d61bc3b23a546282ce3795a75ad4ba97c3cf9d85c9bcd52a4300f2df5ea57541f35f8ef79295491179fb74cf4f4f576682a77e37f35
+  languageName: node
+  linkType: hard
+
 "expo-device@npm:~55.0.14":
   version: 55.0.14
   resolution: "expo-device@npm:55.0.14"
@@ -4571,6 +4619,7 @@ __metadata:
     expo-blur: "npm:~55.0.14"
     expo-constants: "npm:~55.0.13"
     expo-crypto: "npm:~55.0.14"
+    expo-dev-client: "npm:~55.0.24"
     expo-device: "npm:~55.0.14"
     expo-font: "npm:~55.0.6"
     expo-glass-effect: "npm:~55.0.10"
