@@ -51,7 +51,10 @@
       "reactCompiler": true
     },
     "extra": {
-      "router": {}
+      "router": {},
+      "eas": {
+        "projectId": "a826e4d2-d9d5-4d36-9eda-208e2c5725ed"
+      }
     },
     "owner": "thedaampo",
     "runtimeVersion": {
