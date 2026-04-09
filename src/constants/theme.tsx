@@ -22,6 +22,11 @@ export type ThemeColors = {
         secondary: string;
     };
 
+    onBrand: {
+        primary: string;
+        secondary: string;
+    };
+
     interactive: {
         primary: string;
         primaryHover: string;
@@ -81,41 +86,46 @@ export type ThemeColors = {
 
 const lightColors: ThemeColors = {
     surface: {
-        level0: 'hsl(220, 20%, 96%)',    // Cool off-white background
-        level1: 'hsl(220, 18%, 100%)',   // Pure white cards
-        level2: 'hsl(220, 16%, 98%)',    // Elevated cards
-        level3: 'hsl(220, 14%, 95%)',
-        level4: 'hsl(220, 12%, 92%)',
+        level0: 'hsl(225, 30%, 96%)',
+        level1: 'hsl(225, 25%, 100%)',
+        level2: 'hsl(225, 20%, 98%)',
+        level3: 'hsl(225, 18%, 95%)',
+        level4: 'hsl(225, 16%, 92%)',
     },
 
     onSurface: {
-        primary: 'hsl(230, 25%, 12%)',    // Near-black text
-        secondary: 'hsl(230, 15%, 38%)',  // Gray text
-        disabled: 'hsl(220, 10%, 62%)',
-        inverse: 'hsl(220, 15%, 97%)',
+        primary: 'hsl(225, 65%, 18%)',    // Company dark blue, slightly lighter
+        secondary: 'hsl(225, 20%, 40%)',
+        disabled: 'hsl(225, 10%, 62%)',
+        inverse: 'hsl(225, 15%, 97%)',
     },
 
     brand: {
-        primary: 'hsl(200, 90%, 42%)',    // Deep cyan-blue
-        secondary: 'hsl(200, 70%, 52%)',
+        primary: 'hsl(225, 65%, 24%)',    // Company dark blue
+        secondary: 'hsl(225, 65%, 35%)',  // Lighter blue
+    },
+
+    onBrand: {
+        primary: 'hsl(0, 0%, 100%)',
+        secondary: 'hsl(225, 65%, 18%)',
     },
 
     interactive: {
-        primary: 'hsl(200, 90%, 42%)',
-        primaryHover: 'hsl(200, 90%, 35%)',
-        secondary: 'hsl(220, 15%, 90%)',
-        disabled: 'hsl(220, 10%, 85%)',
+        primary: 'hsl(225, 75%, 40%)',    // Brighter interactive blue
+        primaryHover: 'hsl(225, 75%, 32%)',
+        secondary: 'hsl(225, 20%, 90%)',
+        disabled: 'hsl(225, 10%, 85%)',
     },
 
     onInteractive: {
         primary: 'hsl(0, 0%, 100%)',
-        secondary: 'hsl(230, 25%, 15%)',
-        disabled: 'hsl(220, 10%, 62%)',
+        secondary: 'hsl(225, 65%, 18%)',
+        disabled: 'hsl(225, 10%, 62%)',
     },
 
     accent: {
-        primary: 'hsl(16, 90%, 52%)',     // Rich coral
-        secondary: 'hsl(80, 70%, 38%)',   // Forest green
+        primary: 'hsl(16, 90%, 52%)',     // Warm coral for highlights
+        secondary: 'hsl(160, 70%, 45%)',  // Teal for success
     },
 
     onAccent: {
@@ -128,72 +138,77 @@ const lightColors: ThemeColors = {
         onError: 'hsl(0, 0%, 100%)',
         warning: 'hsl(40, 92%, 50%)',
         onWarning: 'hsl(40, 90%, 10%)',
-        success: 'hsl(150, 60%, 40%)',
+        success: 'hsl(160, 70%, 45%)',
         onSuccess: 'hsl(0, 0%, 100%)',
-        info: 'hsl(200, 85%, 48%)',
+        info: 'hsl(225, 75%, 40%)',
         onInfo: 'hsl(0, 0%, 100%)',
     },
 
     border: {
-        subtle: 'hsl(220, 15%, 92%)',
-        default: 'hsl(220, 12%, 85%)',
-        strong: 'hsl(220, 10%, 72%)',
-        interactive: 'hsl(200, 90%, 42%)',
+        subtle: 'hsl(225, 20%, 92%)',
+        default: 'hsl(225, 15%, 85%)',
+        strong: 'hsl(225, 10%, 72%)',
+        interactive: 'hsl(225, 75%, 40%)',
     },
 
     shadow: 'rgba(0, 0, 0, 0.08)',
     overlay: 'rgba(0, 0, 0, 0.45)',
 
     gradients: {
-        primary: ['hsl(195, 100%, 45%)', 'hsl(220, 90%, 50%)'],
+        primary: ['hsl(225, 75%, 40%)', 'hsl(225, 65%, 24%)'],
         accent: ['hsl(16, 100%, 58%)', 'hsl(340, 85%, 55%)'],
-        success: ['hsl(80, 75%, 45%)', 'hsl(170, 65%, 40%)'],
-        surface: ['hsl(220, 18%, 100%)', 'hsl(220, 16%, 97%)'],
+        success: ['hsl(160, 75%, 50%)', 'hsl(180, 65%, 40%)'],
+        surface: ['hsl(225, 25%, 100%)', 'hsl(225, 20%, 97%)'],
     },
 };
 
 const darkColors: ThemeColors = {
     surface: {
-        level0: 'hsl(230, 20%, 8%)',     // Deep charcoal-navy
-        level1: 'hsl(230, 18%, 12%)',    // Card surfaces
-        level2: 'hsl(230, 16%, 16%)',    // Elevated cards
-        level3: 'hsl(230, 14%, 20%)',
-        level4: 'hsl(230, 12%, 26%)',
+        level0: 'hsl(225, 30%, 8%)',      // Deep charcoal-navy
+        level1: 'hsl(225, 28%, 12%)',     // Card surfaces
+        level2: 'hsl(225, 26%, 16%)',     // Elevated cards
+        level3: 'hsl(225, 24%, 20%)',
+        level4: 'hsl(225, 22%, 26%)',
     },
 
     onSurface: {
-        primary: 'hsl(220, 15%, 93%)',    // Near-white text
-        secondary: 'hsl(220, 12%, 60%)',  // Muted blue-gray
-        disabled: 'hsl(220, 10%, 40%)',
-        inverse: 'hsl(230, 25%, 12%)',
+        primary: 'hsl(225, 15%, 93%)',    // Near-white text
+        secondary: 'hsl(225, 12%, 60%)',  // Muted blue-gray
+        disabled: 'hsl(225, 10%, 40%)',
+        inverse: 'hsl(225, 25%, 12%)',
     },
 
     brand: {
-        primary: 'hsl(195, 100%, 50%)',   // Electric cyan
-        secondary: 'hsl(195, 80%, 60%)',
+        primary: 'hsl(225, 80%, 55%)',    // Brighter blue for dark mode
+        secondary: 'hsl(225, 75%, 65%)',  // Even lighter blue
+    },
+
+    onBrand: {
+        primary: 'hsl(0, 0%, 100%)',
+        secondary: 'hsl(225, 30%, 8%)',
     },
 
     interactive: {
-        primary: 'hsl(195, 100%, 50%)',
-        primaryHover: 'hsl(195, 100%, 60%)',
-        secondary: 'hsl(230, 16%, 22%)',
-        disabled: 'hsl(230, 14%, 18%)',
+        primary: 'hsl(225, 80%, 55%)',
+        primaryHover: 'hsl(225, 80%, 62%)',
+        secondary: 'hsl(225, 26%, 22%)',
+        disabled: 'hsl(225, 24%, 18%)',
     },
 
     onInteractive: {
-        primary: 'hsl(230, 25%, 8%)',     // Dark text on bright cyan
-        secondary: 'hsl(220, 15%, 88%)',
-        disabled: 'hsl(220, 10%, 45%)',
+        primary: 'hsl(225, 30%, 8%)',     // Dark text on bright blue
+        secondary: 'hsl(225, 15%, 88%)',
+        disabled: 'hsl(225, 10%, 45%)',
     },
 
     accent: {
         primary: 'hsl(16, 100%, 62%)',    // Hot coral-orange
-        secondary: 'hsl(80, 85%, 55%)',   // Vivid lime
+        secondary: 'hsl(160, 75%, 55%)',  // Vivid teal
     },
 
     onAccent: {
         primary: 'hsl(0, 0%, 100%)',
-        secondary: 'hsl(80, 90%, 8%)',
+        secondary: 'hsl(160, 90%, 8%)',
     },
 
     feedback: {
@@ -201,27 +216,27 @@ const darkColors: ThemeColors = {
         onError: 'hsl(0, 0%, 100%)',
         warning: 'hsl(40, 92%, 60%)',
         onWarning: 'hsl(40, 90%, 8%)',
-        success: 'hsl(150, 65%, 50%)',
-        onSuccess: 'hsl(150, 80%, 8%)',
-        info: 'hsl(195, 90%, 55%)',
-        onInfo: 'hsl(195, 90%, 8%)',
+        success: 'hsl(160, 75%, 55%)',
+        onSuccess: 'hsl(160, 90%, 8%)',
+        info: 'hsl(225, 80%, 55%)',
+        onInfo: 'hsl(225, 90%, 8%)',
     },
 
     border: {
-        subtle: 'hsl(230, 16%, 18%)',
-        default: 'hsl(230, 14%, 26%)',
-        strong: 'hsl(230, 12%, 38%)',
-        interactive: 'hsl(195, 100%, 50%)',
+        subtle: 'hsl(225, 26%, 18%)',
+        default: 'hsl(225, 24%, 26%)',
+        strong: 'hsl(225, 22%, 38%)',
+        interactive: 'hsl(225, 80%, 55%)',
     },
 
     shadow: 'rgba(0, 0, 0, 0.6)',
     overlay: 'rgba(0, 0, 0, 0.75)',
 
     gradients: {
-        primary: ['hsl(195, 100%, 50%)', 'hsl(220, 85%, 55%)'],
+        primary: ['hsl(225, 80%, 55%)', 'hsl(225, 65%, 35%)'],
         accent: ['hsl(16, 100%, 62%)', 'hsl(340, 80%, 58%)'],
-        success: ['hsl(80, 85%, 55%)', 'hsl(170, 70%, 45%)'],
-        surface: ['hsl(230, 18%, 12%)', 'hsl(230, 16%, 16%)'],
+        success: ['hsl(160, 75%, 55%)', 'hsl(180, 65%, 45%)'],
+        surface: ['hsl(225, 28%, 12%)', 'hsl(225, 26%, 16%)'],
     },
 };
 

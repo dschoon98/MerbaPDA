@@ -12,8 +12,8 @@ const TabLayoutContent = () => {
                     minimizeBehavior="onScrollDown"
                     backgroundColor={colors.surface.level0}
                     iconColor={Platform.OS === 'android' ? colors.onSurface.secondary : undefined}
-                    tintColor={Platform.OS === 'android' ? colors.brand.primary : undefined}
-                    indicatorColor={Platform.OS === 'android' ? colors.brand.primary + '28' : undefined}
+                    tintColor={Platform.OS === 'android' ? colors.onBrand.primary : undefined}
+                    indicatorColor={Platform.OS === 'android' ? colors.brand.primary : undefined}
                     badgeBackgroundColor={Platform.OS === 'android' ? colors.accent.primary : undefined}
                     badgeTextColor={Platform.OS === 'android' ? colors.onAccent.primary : undefined}
                     rippleColor={'transparent'}
