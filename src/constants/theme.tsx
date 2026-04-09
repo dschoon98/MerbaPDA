@@ -2,6 +2,8 @@ import React, { createContext, useCallback, useContext, useEffect, useMemo, useS
 import { Appearance, ColorSchemeName, Platform, TextStyle } from 'react-native';
 
 export type ThemeColors = {
+    background: string;
+
     surface: {
         level0: string;
         level1: string;
@@ -61,6 +63,15 @@ export type ThemeColors = {
         onInfo: string;
     };
 
+    severity: {
+        error: string;
+        onError: string;
+        warning: string;
+        onWarning: string;
+        info: string;
+        onInfo: string;
+    };
+
     border: {
         subtle: string;
         default: string;
@@ -85,6 +96,7 @@ export type ThemeColors = {
 // ═══════════════════════════════════════════
 
 const lightColors: ThemeColors = {
+    background: 'hsl(225, 30%, 96%)',
     surface: {
         level0: 'hsl(225, 30%, 96%)',
         level1: 'hsl(225, 25%, 100%)',
@@ -140,8 +152,17 @@ const lightColors: ThemeColors = {
         onWarning: 'hsl(40, 90%, 10%)',
         success: 'hsl(160, 70%, 45%)',
         onSuccess: 'hsl(0, 0%, 100%)',
-        info: 'hsl(225, 75%, 40%)',
+        info: 'hsl(205, 85%, 52%)',
         onInfo: 'hsl(0, 0%, 100%)',
+    },
+
+    severity: {
+        error: 'hsl(0, 78%, 55%)',
+        onError: 'hsl(0, 0%, 100%)',
+        warning: 'hsl(40, 92%, 50%)',
+        onWarning: 'hsl(40, 90%, 10%)',
+        info: 'hsl(205, 85%, 52%)',
+        onInfo: 'hsl(205, 90%, 100%)',
     },
 
     border: {
@@ -163,6 +184,7 @@ const lightColors: ThemeColors = {
 };
 
 const darkColors: ThemeColors = {
+    background: 'hsl(225, 30%, 8%)',
     surface: {
         level0: 'hsl(225, 30%, 8%)',      // Deep charcoal-navy
         level1: 'hsl(225, 28%, 12%)',     // Card surfaces
@@ -196,7 +218,7 @@ const darkColors: ThemeColors = {
     },
 
     onInteractive: {
-        primary: 'hsl(225, 30%, 8%)',     // Dark text on bright blue
+        primary: 'hsl(0, 0%, 100%)',       // White text on bright blue
         secondary: 'hsl(225, 15%, 88%)',
         disabled: 'hsl(225, 10%, 45%)',
     },
@@ -220,6 +242,15 @@ const darkColors: ThemeColors = {
         onSuccess: 'hsl(160, 90%, 8%)',
         info: 'hsl(225, 80%, 55%)',
         onInfo: 'hsl(225, 90%, 8%)',
+    },
+
+    severity: {
+        error: 'hsl(0, 80%, 62%)',
+        onError: 'hsl(0, 0%, 100%)',
+        warning: 'hsl(40, 92%, 60%)',
+        onWarning: 'hsl(40, 90%, 8%)',
+        info: 'hsl(205, 85%, 52%)',
+        onInfo: 'hsl(205, 90%, 100%)',
     },
 
     border: {

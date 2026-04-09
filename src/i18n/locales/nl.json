@@ -1,0 +1,54 @@
+{
+    "home": {
+        "label": "Meldingen",
+        "title": "PDA Meldingen",
+        "filterAll": "Alle",
+        "filterError": "Fout",
+        "filterWarning": "Waarschuwing",
+        "filterInfo": "Info",
+        "noMessages": "Geen meldingen",
+        "pullToRefresh": "Trek om te verversen",
+        "unread": "Ongelezen"
+    },
+    "severity": {
+        "error": "Fout",
+        "warning": "Waarschuwing",
+        "info": "Info"
+    },
+    "sheet": {
+        "details": "Details",
+        "group": "Groep",
+        "location": "Locatie",
+        "systemPart": "Systeemonderdeel",
+        "status": "Status",
+        "description": "Beschrijving",
+        "fullMessage": "Volledig bericht",
+        "acknowledge": "Bevestigen",
+        "respond": "Reageren",
+        "responsePlaceholder": "Typ uw reactie...",
+        "send": "Versturen",
+        "acknowledged": "Melding bevestigd"
+    },
+    "profile": {
+        "label": "Profiel",
+        "title": "Profiel",
+        "login": "Inloggen met Microsoft",
+        "logout": "Uitloggen",
+        "notLoggedIn": "Niet ingelogd",
+        "signedInAs": "Ingelogd als",
+        "settings": "Instellingen",
+        "theme": "Thema",
+        "themeLight": "Licht",
+        "themeDark": "Donker",
+        "themeSystem": "Systeem",
+        "language": "Taal",
+        "langEn": "English",
+        "langNl": "Nederlands",
+        "langSystem": "Systeem"
+    },
+    "common": {
+        "cancel": "Annuleren",
+        "ok": "OK",
+        "loading": "Laden..."
+    }
+}
